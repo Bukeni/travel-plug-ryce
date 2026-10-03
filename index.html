@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#151713" />
+    <meta
+      name="description"
+      content="Travel Plug Ryce — hidden places, unfiltered journeys and stories worth the road. Exploring Kenya, one road at a time."
+    />
+    <title>Travel Plug Ryce — Exploring Kenya, one road at a time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site-images.js"></script>
+    <script src="supabase-config.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Travel Plug Ryce home" title="Back to the start">
+        <img class="wordmark-logo" src="images/tp.PNG" alt="Travel Plug Ryce" />
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#explore">EXPLORE</a>
+        <a href="#journeys">JOURNEYS</a>
+        <a href="#destinations">DESTINATIONS</a>
+        <a href="#experiences">EXPERIENCES</a>
+        <a href="family.html">FAMILY TRIPS</a>
+        <a href="#stories">STORIES</a>
+        <a href="blog.html">BLOG</a>
+        <a href="#about">ABOUT</a>
+      </nav>
+      <a class="header-location" href="#map"><span class="live-dot"></span> CURRENTLY IN KENYA</a>
+    </header>
+
+    <main>
+      <section class="hero" id="explore" aria-label="Explore Kenya">
+        <div class="hero-image" data-image-key="hero"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-coordinate mono">01° 17' 54.4" S &nbsp; 36° 49' 11.2" E</div>
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A FIELD JOURNAL FROM KENYA</p>
+          <h1>TRAVEL<br />PLUG <span>RYCE</span></h1>
+          <p class="hero-subtitle">Exploring Kenya, <em>one road at a time.</em></p>
+          <p class="hero-note">Hidden places. Unfiltered journeys.<br />Stories worth the road.</p>
+          <a class="text-link hero-link" href="#journeys">START EXPLORING <span>↓</span></a>
+        </div>
+        <div class="hero-bottom">
+          <span class="mono">KENYA / FIELD NOTES NO. 001</span>
+          <span class="hero-bottom-center">THE LONG WAY IS THE RIGHT WAY</span>
+          <span class="mono">SCROLL TO WANDER &nbsp; ↓</span>
+        </div>
+        <div class="hero-index mono">01 — 06</div>
+      </section>
+
+      <section class="intro section-pad">
+        <p class="eyebrow dark-eyebrow">NOT A TOUR. A WAY OF GETTING LOST.</p>
+        <div class="intro-copy">
+          <h2>Kenya, beyond<br />the <em>obvious.</em></h2>
+          <div class="intro-aside">
+            <p>This is a living record of the roads I take, the people I meet, and the places I almost drove past. No perfect itinerary. Just a full tank, an open mind, and a feeling there's more around the bend.</p>
+            <a class="text-link dark-link" href="#about">A LITTLE ABOUT ME <span>↗</span></a>
+          </div>
+        </div>
+        <div class="intro-stats">
+          <div><strong>07</strong><span>COUNTIES<br />CROSSED</span></div>
+          <div><strong>2,480<span>+</span></strong><span>KILOMETRES<br />AND COUNTING</span></div>
+          <div><strong>∞</strong><span>REASONS TO<br />TAKE THE DETOUR</span></div>
+          <div class="intro-stamp mono">NO GPS<br />CAN TELL<br />THE WHOLE<br />STORY.</div>
+        </div>
+      </section>
+
+      <section class="journeys section-pad" id="journeys">
+        <div class="section-heading light-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> THE TRAVEL DIARY</p>
+            <h2>Journeys <em>so far.</em></h2>
+          </div>
+          <p class="heading-note">Some planned. Some absolutely not.<br />Every one worth the dust.</p>
+        </div>
+        <div class="journey-track" aria-label="Journey stories">
+          <button class="journey-card journey-large" data-journey="down-south" data-image-key="journey:down-south">
+            <span class="card-top mono">01 / 06 <span>750 KM · 5 DAYS</span></span>
+            <span class="journey-card-copy"><span class="card-kicker">NAIROBI TO THE COAST</span><strong>DOWN<br />SOUTH<span>.</span></strong><span class="route-label">NAIROBI → DONGO KUNDU → DIANI → WATAMU</span></span>
+            <span class="card-open">OPEN FIELD NOTES <b>↗</b></span>
+          </button>
+          <button class="journey-card" data-journey="into-the-wild" data-image-key="journey:into-the-wild">
+            <span class="card-top mono">02 / OFF THE GRID <span>4×4 · DUSTY</span></span>
+            <span class="journey-card-copy"><span class="card-kicker">NO SIGNAL. NO RUSH.</span><strong>INTO<br />THE WILD<span>.</span></strong><span class="route-label">REMOTE ROADS & OPEN COUNTRY</span></span>
+            <span class="card-open">OPEN FIELD NOTES <b>↗</b></span>
+          </button>
+          <button class="journey-card" data-journey="mountain-routes" data-image-key="journey:mountain-routes">
+            <span class="card-top mono">03 / HIGHER GROUND <span>CHYULU HILLS</span></span>
+            <span class="journey-card-copy"><span class="card-kicker">WHERE THE AIR CHANGES</span><strong>THE<br />MOUNTAIN<br />ROUTES<span>.</span></strong><span class="route-label">HIGHLANDS · TRAILS · BIG SKY</span></span>
+            <span class="card-open">OPEN FIELD NOTES <b>↗</b></span>
+          </button>
+          <button class="journey-card" data-journey="coastal-stories" data-image-key="journey:coastal-stories">
+            <span class="card-top mono">04 / SALT IN THE AIR <span>COASTAL KENYA</span></span>
+            <span class="journey-card-copy"><span class="card-kicker">LIFE MOVES DIFFERENT HERE</span><strong>COASTAL<br />STORIES<span>.</span></strong><span class="route-label">BEACHES · FOOD · VILLAGES</span></span>
+            <span class="card-open">OPEN FIELD NOTES <b>↗</b></span>
+          </button>
+          <button class="journey-card" data-journey="samburu" data-image-key="journey:samburu">
+            <span class="card-top mono">05 / NORTHERN FRONTIER <span>SAMBURU</span></span>
+            <span class="journey-card-copy"><span class="card-kicker">WILDERNESS WITH A PULSE</span><strong>SAMBURU<br />& BEYOND<span>.</span></strong><span class="route-label">LANDSCAPES · PEOPLE · WILD</span></span>
+            <span class="card-open">OPEN FIELD NOTES <b>↗</b></span>
+          </button>
+          <button class="journey-card" data-journey="roads-less-travelled" data-image-key="journey:roads-less-travelled">
+            <span class="card-top mono">06 / THE DETOUR <span>UNPLANNED</span></span>
+            <span class="journey-card-copy"><span class="card-kicker">THE GOOD STUFF IS NEVER MARKED</span><strong>ROADS<br />LESS<br />TRAVELLED<span>.</span></strong><span class="route-label">WHEREVER THE ROAD GOES</span></span>
+            <span class="card-open">OPEN FIELD NOTES <b>↗</b></span>
+          </button>
+        </div>
+        <div class="track-footer">
+          <span class="mono">DRAG TO WANDER <span>⟶</span></span>
+          <div class="track-arrows"><button class="track-arrow" data-scroll="-1" aria-label="Scroll journeys left">←</button><button class="track-arrow" data-scroll="1" aria-label="Scroll journeys right">→</button></div>
+        </div>
+      </section>
+
+      <section class="hidden-kenya section-pad" id="destinations">
+        <div class="section-heading dark-heading">
+          <div><p class="eyebrow dark-eyebrow">THE PLACES THAT STAY WITH YOU</p><h2>Hidden <em>Kenya.</em></h2></div>
+          <p class="heading-note">There is more to Kenya than the places<br />everyone already knows.</p>
+        </div>
+        <div class="hidden-grid">
+          <button class="hidden-card hidden-feature" data-place="sheldrick-falls" data-image-key="hidden:sheldrick-falls">
+            <span class="hidden-category mono">01 / HIDDEN WATERFALLS</span><span class="hidden-name">A little further<br />upstream.</span><span class="hidden-discover">EXPLORE LOCATION <b>↗</b></span>
+          </button>
+          <button class="hidden-card" data-place="gazi" data-image-key="hidden:gazi">
+            <span class="hidden-category mono">02 / SECRET BEACHES</span><span class="hidden-name">Gazi, before<br />the crowds.</span><span class="hidden-discover">EXPLORE LOCATION <b>↗</b></span>
+          </button>
+          <button class="hidden-card" data-place="chyulu" data-image-key="hidden:chyulu">
+            <span class="hidden-category mono">03 / MOUNTAIN ESCAPES</span><span class="hidden-name">Green hills.<br />No hurry.</span><span class="hidden-discover">EXPLORE LOCATION <b>↗</b></span>
+          </button>
+          <button class="hidden-card" data-place="magadi" data-image-key="hidden:magadi">
+            <span class="hidden-category mono">04 / OFF-ROAD ROUTES</span><span class="hidden-name">The long way<br />to Magadi.</span><span class="hidden-discover">EXPLORE LOCATION <b>↗</b></span>
+          </button>
+          <button class="hidden-card" data-place="old-town" data-image-key="hidden:old-town">
+            <span class="hidden-category mono">05 / LOCAL FOOD</span><span class="hidden-name">Follow the<br />smoke.</span><span class="hidden-discover">EXPLORE LOCATION <b>↗</b></span>
+          </button>
+          <button class="hidden-card" data-place="loitoktok" data-image-key="hidden:loitoktok">
+            <span class="hidden-category mono">06 / UNIQUE STAYS</span><span class="hidden-name">Wake up<br />somewhere wild.</span><span class="hidden-discover">EXPLORE LOCATION <b>↗</b></span>
+          </button>
+        </div>
+        <div class="hidden-footer"><span class="mono">ALWAYS ASK LOCALLY. ALWAYS LEAVE IT BETTER.</span><a class="text-link dark-link" href="#map">FIND MORE ON THE MAP <span>↗</span></a></div>
+      </section>
+
+      <section class="map-section section-pad" id="map">
+        <div class="section-heading light-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> THE LIVING ARCHIVE</p><h2>Kenya, <em>pin by pin.</em></h2></div>
+          <p class="heading-note">Every pin has a story. Tap one<br />and come a little closer.</p>
+        </div>
+        <div class="map-layout">
+          <div class="map-canvas" role="img" aria-label="Interactive map of Kenya with explored locations">
+            <div class="map-grid"></div>
+            <svg class="kenya-map" viewBox="0 0 520 580" aria-hidden="true">
+              <defs><pattern id="maplines" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M0 18L18 0" stroke="#77755f" stroke-opacity=".08" stroke-width="1"/></pattern></defs>
+              <path class="country-shape" d="M148 40 L226 58 L287 45 L334 84 L372 78 L403 125 L450 143 L437 188 L465 224 L441 265 L453 305 L427 338 L436 379 L402 401 L388 448 L349 462 L327 513 L277 500 L235 527 L201 490 L160 479 L149 439 L111 423 L109 381 L75 351 L93 309 L70 276 L97 242 L82 203 L111 178 L99 140 L132 115 L119 76 Z" fill="url(#maplines)"/>
+              <path class="country-outline" d="M148 40 L226 58 L287 45 L334 84 L372 78 L403 125 L450 143 L437 188 L465 224 L441 265 L453 305 L427 338 L436 379 L402 401 L388 448 L349 462 L327 513 L277 500 L235 527 L201 490 L160 479 L149 439 L111 423 L109 381 L75 351 L93 309 L70 276 L97 242 L82 203 L111 178 L99 140 L132 115 L119 76 Z"/>
+              <path class="route-line" d="M249 167 C273 209 245 245 285 283 S304 365 347 410 S363 452 365 477"/>
+              <path class="route-line route-faint" d="M249 167 C201 198 169 230 139 276 S169 342 229 366 S284 421 365 477"/>
+              <text x="238" y="110" class="map-region-label">KENYA</text>
+              <text x="104" y="287" class="map-region-label small-label">NAKURU</text>
+              <text x="305" y="226" class="map-region-label small-label">GARISSA</text>
+              <text x="220" y="390" class="map-region-label small-label">TSAVO</text>
+              <text x="383" y="353" class="map-region-label small-label">INDIAN OCEAN</text>
+              <text x="392" y="364" class="map-region-label small-label">〰 〰 〰</text>
+            </svg>
+            <button class="map-pin pin-nairobi selected" data-location="nairobi" aria-label="Explore Nairobi"><span></span></button>
+            <button class="map-pin pin-chyulu" data-location="chyulu" aria-label="Explore Chyulu Hills"><span></span></button>
+            <button class="map-pin pin-diani" data-location="diani" aria-label="Explore Diani"><span></span></button>
+            <button class="map-pin pin-watamu" data-location="watamu" aria-label="Explore Watamu"><span></span></button>
+            <button class="map-pin pin-samburu" data-location="samburu" aria-label="Explore Samburu"><span></span></button>
+            <button class="map-pin pin-magadi" data-location="magadi" aria-label="Explore Magadi"><span></span></button>
+            <span class="map-compass mono">N<br /><span>↑</span></span>
+            <span class="map-scale mono">0 ───── 100 KM</span>
+            <span class="map-caption mono">FIELD RECORD / KENYA</span>
+          </div>
+          <aside class="map-detail" aria-live="polite">
+            <div class="map-detail-top mono"><span>SELECTED LOCATION</span><span class="map-count">01 / 06</span></div>
+            <p class="map-type"><span>●</span> CITY / STARTING POINT</p>
+            <h3>Nairobi<span>.</span></h3>
+            <p class="map-story">Every good story starts somewhere. Mine usually starts here, with a full tank, an overpacked bag, and a plan that won't survive the first stop.</p>
+            <div class="map-coords mono">01° 17' S &nbsp; 36° 49' E</div>
+            <div class="map-preview">
+              <div class="map-preview-image" data-image-key="map:nairobi"></div>
+              <div><span class="mono">ON THE ROAD</span><strong>Down South — Day 01</strong><a href="#journeys">READ THE JOURNEY ↗</a></div>
+            </div>
+            <div class="map-legend mono"><span><i class="legend-dot mountain">▲</i> MOUNTAINS</span><span><i class="legend-dot coast">●</i> COAST</span><span><i class="legend-dot nature">●</i> NATURE</span><span><i class="legend-dot road">━</i> ROAD TRIPS</span><span><i class="legend-dot hidden">◆</i> HIDDEN GEMS</span></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="stories section-pad" id="stories">
+        <div class="section-heading dark-heading">
+          <div><p class="eyebrow dark-eyebrow">NO SCRIPT. JUST THE ROAD.</p><h2>From the <em>road.</em></h2></div>
+          <a class="text-link dark-link" href="blog.html">ALL FIELD NOTES <span>↗</span></a>
+        </div>
+        <div class="stories-grid">
+          <article class="story-feature">
+            <a class="story-image" href="#journeys" data-image-key="story:chyulu" aria-label="Read The road to Chyulu Hills"></a>
+            <div class="story-meta mono"><span>FIELD NOTE 004</span><span>6 MIN READ · CHYULU HILLS</span></div>
+            <h3><a href="#journeys">The road to<br /><em>Chyulu Hills.</em></a></h3>
+            <p>We took a turn we weren't sure about. The road got rough, the signal disappeared, and then the hills opened up like they had been waiting for us.</p>
+            <a class="text-link dark-link" href="#journeys">READ THE STORY <span>↗</span></a>
+          </article>
+          <article class="story-small story-top">
+            <a class="story-thumb" href="#journeys" data-image-key="story:coast" aria-label="Read 750 kilometres to the coast"></a>
+            <div class="story-small-copy"><div class="story-meta mono"><span>FIELD NOTE 001</span><span>9 MIN</span></div><h3><a href="#journeys">750 km to the coast —<br />was it worth it?</a></h3><p>A loose mirror, one wrong turn and the best mishkaki of my life.</p><a href="#journeys" class="story-arrow">↗</a></div>
+          </article>
+          <article class="story-small">
+            <a class="story-thumb" href="#journeys" data-image-key="story:detour" aria-label="Read What I found after leaving the main road"></a>
+            <div class="story-small-copy"><div class="story-meta mono"><span>FIELD NOTE 006</span><span>4 MIN</span></div><h3><a href="#journeys">What I found after<br />leaving the main road.</a></h3><p>The detour wasn't on the map. That's probably why it was good.</p><a href="#journeys" class="story-arrow">↗</a></div>
+          </article>
+        </div>
+        <div class="published-feed-wrap">
+          <div class="published-feed-heading"><p class="eyebrow dark-eyebrow">NEW FROM THE JOURNAL</p><a href="blog.html" class="text-link dark-link">VISIT THE BLOG <span>↗</span></a></div>
+          <p class="content-feed-status" data-home-stories-status aria-live="polite">Loading published stories…</p>
+          <div class="published-story-grid" data-home-stories></div>
+        </div>
+      </section>
+
+      <section class="instagram-section" id="instagram">
+        <div class="instagram-heading section-pad">
+          <div>
+            <p class="eyebrow dark-eyebrow">POSTCARDS, AS THEY HAPPEN</p>
+            <h2>A little more<br />from the <em>road.</em></h2>
+          </div>
+          <div class="instagram-follow">
+            <p>Small moments. Long roads.<br />The bits between the big stories.</p>
+            <a class="text-link dark-link" href="https://www.instagram.com/travel_plugryce/" target="_blank" rel="noreferrer">FOLLOW @TRAVEL_PLUGRYCE <span>↗</span></a>
+          </div>
+        </div>
+        <div class="instagram-loop" aria-label="Travel Plug Ryce photo highlights">
+          <div class="instagram-track">
+            <div class="instagram-set">
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" target="_blank" rel="noreferrer" data-image-key="instagram:0" aria-label="Wildlife from the road — visit Travel Plug Ryce on Instagram"><span class="instagram-overlay"><span class="mono">WIDE OPEN / KENYA</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" target="_blank" rel="noreferrer" data-image-key="instagram:1" aria-label="Coastal moments — visit Travel Plug Ryce on Instagram"><span class="instagram-overlay"><span class="mono">SALT IN THE AIR</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" target="_blank" rel="noreferrer" data-image-key="instagram:2" aria-label="Mountain routes — visit Travel Plug Ryce on Instagram"><span class="instagram-overlay"><span class="mono">HIGHER GROUND</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" target="_blank" rel="noreferrer" data-image-key="instagram:3" aria-label="Waterfall detour — visit Travel Plug Ryce on Instagram"><span class="instagram-overlay"><span class="mono">TAKE THE DETOUR</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" target="_blank" rel="noreferrer" data-image-key="instagram:4" aria-label="Open road in Kenya — visit Travel Plug Ryce on Instagram"><span class="instagram-overlay"><span class="mono">NO FIXED ROUTE</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" target="_blank" rel="noreferrer" data-image-key="instagram:5" aria-label="Night sky over the highlands — visit Travel Plug Ryce on Instagram"><span class="instagram-overlay"><span class="mono">AFTER THE MILES</span><b>↗</b></span></a>
+            </div>
+            <div class="instagram-set" aria-hidden="true" inert>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" tabindex="-1" data-image-key="instagram:0"><span class="instagram-overlay"><span class="mono">WIDE OPEN / KENYA</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" tabindex="-1" data-image-key="instagram:1"><span class="instagram-overlay"><span class="mono">SALT IN THE AIR</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" tabindex="-1" data-image-key="instagram:2"><span class="instagram-overlay"><span class="mono">HIGHER GROUND</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" tabindex="-1" data-image-key="instagram:3"><span class="instagram-overlay"><span class="mono">TAKE THE DETOUR</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" tabindex="-1" data-image-key="instagram:4"><span class="instagram-overlay"><span class="mono">NO FIXED ROUTE</span><b>↗</b></span></a>
+              <a class="instagram-photo" href="https://www.instagram.com/travel_plugryce/" tabindex="-1" data-image-key="instagram:5"><span class="instagram-overlay"><span class="mono">AFTER THE MILES</span><b>↗</b></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="instagram-bottom section-pad">
+          <span class="mono">A ROLLING FIELD JOURNAL · KENYA</span>
+          <button class="instagram-pause mono" type="button" aria-pressed="false">PAUSE LOOP <span>Ⅱ</span></button>
+        </div>
+      </section>
+
+      <section class="youtube-section section-pad" id="videos">
+        <div class="section-heading light-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> THE LATEST MOVING PICTURES</p>
+            <h2>Fresh from<br /><em>the road.</em></h2>
+          </div>
+          <div class="youtube-intro">
+            <p>New places, seen firsthand.<br />Press play and ride along.</p>
+            <a class="text-link" href="blog.html#blog-videos">ALL VIDEOS <span>↗</span></a>
+          </div>
+        </div>
+        <div class="youtube-grid">
+          <article class="youtube-card">
+            <a class="youtube-frame" href="https://www.youtube.com/watch?v=osfiNAqiiDg" target="_blank" rel="noreferrer" aria-label="Play Vipingo Ridge on YouTube">
+              <img src="https://img.youtube.com/vi/osfiNAqiiDg/hqdefault.jpg" alt="Video thumbnail for Vipingo Ridge" loading="eager" />
+              <span class="youtube-play" aria-hidden="true">▶</span>
+              <span class="youtube-frame-label mono">PLAY VIDEO / YOUTUBE</span>
+            </a>
+            <div class="youtube-meta mono"><span>FIELD CLIP / THE COAST</span><span>30 SEP 2026</span></div>
+            <h3>Vipingo Ridge</h3>
+            <a href="https://www.youtube.com/watch?v=osfiNAqiiDg" target="_blank" rel="noreferrer" class="youtube-watch">WATCH ON YOUTUBE <span>↗</span></a>
+          </article>
+          <article class="youtube-card">
+            <a class="youtube-frame" href="https://www.youtube.com/watch?v=t2uzBXH8Kok" target="_blank" rel="noreferrer" aria-label="Play Kwetu Homes- Diani on YouTube">
+              <img src="https://img.youtube.com/vi/t2uzBXH8Kok/hqdefault.jpg" alt="Video thumbnail for Kwetu Homes- Diani" loading="eager" />
+              <span class="youtube-play" aria-hidden="true">▶</span>
+              <span class="youtube-frame-label mono">PLAY VIDEO / YOUTUBE</span>
+            </a>
+            <div class="youtube-meta mono"><span>FIELD CLIP / DIANI</span><span>30 SEP 2026</span></div>
+            <h3>Kwetu Homes- Diani</h3>
+            <a href="https://www.youtube.com/watch?v=t2uzBXH8Kok" target="_blank" rel="noreferrer" class="youtube-watch">WATCH ON YOUTUBE <span>↗</span></a>
+          </article>
+        </div>
+        <div class="published-video-feed">
+          <div class="published-feed-heading"><p class="eyebrow">NEW REELS &amp; VIDEOS</p><a href="blog.html#reels" class="text-link">ALL VIDEOS <span>↗</span></a></div>
+          <p class="content-feed-status" data-home-video-status aria-live="polite">Loading published videos…</p>
+          <div class="published-video-grid" data-home-videos></div>
+        </div>
+      </section>
+
+      <section class="experiences section-pad" id="experiences">
+        <div class="section-heading light-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> PICK YOUR KIND OF WILD</p><h2>Out here, <em>your way.</em></h2></div>
+          <p class="heading-note">No two trips look the same.<br />What are you in the mood for?</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter experiences">
+          <label>REGION <select id="region-filter"><option value="all">Anywhere in Kenya</option><option value="coast">The Coast</option><option value="south">Southern Kenya</option><option value="north">Northern Kenya</option></select></label>
+          <label>TYPE <select id="type-filter"><option value="all">All adventures</option><option value="road">Road trips</option><option value="outdoors">Outdoors</option><option value="culture">Food & culture</option></select></label>
+          <label>DISTANCE <select id="distance-filter"><option value="all">Any distance</option><option value="short">Under 100 km</option><option value="long">100 km +</option></select></label>
+          <span class="filter-hint mono">FILTER YOUR NEXT DETOUR ↘</span>
+        </div>
+        <div class="experience-grid">
+          <a class="experience-card" data-region="coast" data-type="road" data-distance="long" data-image-key="experience:road-trips" href="#journeys"><span class="experience-number mono">01 / THE COAST</span><strong>Road trips</strong><span class="experience-icon">↗</span></a>
+          <a class="experience-card" data-region="south" data-type="outdoors" data-distance="long" data-image-key="experience:hiking" href="#journeys"><span class="experience-number mono">02 / HIGH GROUND</span><strong>Hiking</strong><span class="experience-icon">↗</span></a>
+          <a class="experience-card" data-region="north" data-type="outdoors" data-distance="long" data-image-key="experience:wildlife" href="#journeys"><span class="experience-number mono">03 / WIDE OPEN</span><strong>Wildlife</strong><span class="experience-icon">↗</span></a>
+          <a class="experience-card" data-region="coast" data-type="culture" data-distance="short" data-image-key="experience:beaches" href="#destinations"><span class="experience-number mono">04 / SLOW DOWN</span><strong>Beach escapes</strong><span class="experience-icon">↗</span></a>
+          <a class="experience-card" data-region="south" data-type="road" data-distance="long" data-image-key="experience:4x4" href="#journeys"><span class="experience-number mono">05 / DUST & GRAVEL</span><strong>4×4 exploration</strong><span class="experience-icon">↗</span></a>
+          <a class="experience-card" data-region="coast" data-type="culture" data-distance="short" data-image-key="experience:food" href="#stories"><span class="experience-number mono">06 / PULL UP A CHAIR</span><strong>Food & culture</strong><span class="experience-icon">↗</span></a>
+        </div>
+        <p class="no-experiences" hidden>No stops match those filters yet. Try a wider search.</p>
+      </section>
+
+      <section class="about section-pad" id="about">
+        <div class="about-image" data-image-key="about"><span class="about-image-caption mono">SOMEWHERE OFF THE B8 · 2025</span></div>
+        <div class="about-copy">
+          <p class="eyebrow dark-eyebrow">A NOTE FROM THE DRIVER'S SEAT</p>
+          <h2>Come with me.<br />Let's see what's <em>out there.</em></h2>
+          <p>I'm Ryce — explorer, storyteller, photographer and habitual taker of the wrong turn. Travel Plug is my way of keeping the good bits: the roadside chai, the rain we didn't pack for, the people who pointed us in the right direction.</p>
+          <p>Not a perfect guide. A real one. If a road was rough, I'll tell you. If a place made me stop talking for a minute, you'll know that too.</p>
+          <a class="text-link dark-link" href="mailto:hello@travelplugryce.com">LET'S TALK / COLLABORATE <span>↗</span></a>
+          <span class="about-signature">Ryce <span>—</span></span>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div class="closing-image" data-image-key="closing"></div><div class="closing-shade"></div>
+        <div class="closing-content">
+          <p class="eyebrow"><span class="eyebrow-line"></span> NEXT STOP: SOMEWHERE NEW</p>
+          <h2>THE ROAD<br />DOESN'T END <em>HERE.</em></h2>
+          <p>Where should we explore next?</p>
+          <a class="button-link" href="#journeys">EXPLORE THE JOURNEYS <span>→</span></a>
+        </div>
+        <span class="closing-coordinate mono">KENYA IS BIGGER THAN YOUR ITINERARY.</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#top" aria-label="Travel Plug Ryce home" title="Back to the start"><img class="wordmark-logo" src="images/tp.PNG" alt="Travel Plug Ryce" /></a>
+      <span class="footer-note mono">MADE BETWEEN DETOURS IN KENYA <span>✳</span> 2025</span>
+      <div class="social-links"><a href="https://www.instagram.com/travel_plugryce/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a><a href="https://www.youtube.com/@TravelPlugRyce" target="_blank" rel="noreferrer">YOUTUBE ↗</a><a href="https://www.tiktok.com/@travelplugryce" target="_blank" rel="noreferrer">TIKTOK ↗</a></div>
+      <a href="#top" class="back-top mono">BACK TO TOP ↑</a>
+    </footer>
+
+    <dialog class="story-modal" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Close story">×</button>
+      <div class="modal-hero"></div>
+      <div class="modal-content"><p class="eyebrow dark-eyebrow" id="modal-kicker"></p><h2 id="modal-title"></h2><p id="modal-route" class="modal-route mono"></p><p id="modal-description"></p><div class="modal-facts"><span><b>DISTANCE</b><i id="modal-distance"></i></span><span><b>WHEN</b><i id="modal-date"></i></span><span><b>RIDE</b><i id="modal-vehicle"></i></span></div><div class="modal-placeholder">PHOTOGRAPHY · VIDEO · ROAD NOTES<br /><span>THE JOURNEY CONTINUES TO UNFOLD</span></div><button class="modal-done" type="button">BACK TO THE JOURNEYS ←</button></div>
+    </dialog>
+    <dialog class="place-modal" aria-labelledby="place-title">
+      <button class="modal-close" aria-label="Close location">×</button>
+      <div class="place-modal-image"></div><div class="place-modal-content"><p class="eyebrow dark-eyebrow" id="place-kicker"></p><h2 id="place-title"></h2><p id="place-description"></p><div class="place-facts"><span><b>BEST TIME</b><i id="place-time"></i></span><span><b>GETTING THERE</b><i id="place-access"></i></span></div><p class="place-note" id="place-note"></p><button class="modal-done" type="button">BACK TO HIDDEN KENYA ←</button></div>
+    </dialog>
+
+    <script src="script.js"></script>
+    <script type="module" src="home-content.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#151713" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Admin — Travel Plug Ryce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="supabase-config.js"></script>
+  </head>
+  <body class="admin-page">
+    <header class="admin-header">
+      <a class="wordmark" href="index.html" aria-label="Travel Plug Ryce home"><img class="wordmark-logo" src="images/tp.PNG" alt="Travel Plug Ryce" /></a>
+      <a class="mono" href="blog.html">VIEW THE BLOG ↗</a>
+    </header>
+    <main class="admin-main">
+      <section class="admin-login-panel" data-admin-login>
+        <p class="eyebrow dark-eyebrow">PRIVATE EDITOR ACCESS</p>
+        <h1>Sign in to<br /><em>the journal.</em></h1>
+        <p>Only an approved administrator can sign in. Request a one-time link sent to the admin email, or use your password after setting one.</p>
+        <form data-login-form>
+          <label>Email address<input type="email" name="email" autocomplete="username" value="arteefjid@gmail.com" required /></label>
+          <label>Password<input type="password" name="password" autocomplete="current-password" /></label>
+          <div class="admin-form-actions admin-login-actions">
+            <button class="admin-primary-button" type="button" data-email-link>SEND A LOGIN LINK</button>
+            <button class="admin-secondary-button" type="button" data-password-login>SIGN IN WITH PASSWORD</button>
+          </div>
+        </form>
+        <p class="admin-status" data-login-status role="status" aria-live="polite"></p>
+      </section>
+      <section class="admin-workspace" data-admin-workspace hidden>
+        <div class="admin-title-row"><div><p class="eyebrow dark-eyebrow">PRIVATE EDITOR ACCESS</p><h1>Journal <em>desk.</em></h1></div><button type="button" class="admin-secondary-button" data-sign-out>SIGN OUT</button></div>
+        <p class="admin-status" data-admin-status role="status" aria-live="polite"></p>
+        <details class="admin-password-panel">
+          <summary>Set or change your password</summary>
+          <p class="admin-help">Choose a password of at least 12 characters. You can also keep signing in with email links.</p>
+          <form data-password-form>
+            <label>New password<input type="password" name="password" autocomplete="new-password" minlength="12" required /></label>
+            <label>Confirm new password<input type="password" name="confirm_password" autocomplete="new-password" minlength="12" required /></label>
+            <button class="admin-primary-button" type="submit">SAVE PASSWORD</button>
+          </form>
+          <p class="admin-status" data-password-status role="status" aria-live="polite"></p>
+        </details>
+        <div class="admin-columns">
+          <section class="admin-editor">
+            <h2 data-form-heading>Write a new post</h2>
+            <form data-post-form>
+              <input type="hidden" name="id" />
+              <input type="hidden" name="cover_image_url" />
+              <input type="hidden" name="image_paths" />
+              <label>Post type
+                <select name="post_type" required>
+                  <option value="story">Story</option><option value="reel">Reel</option><option value="video">Video</option>
+                </select>
+              </label>
+              <label>Title<input name="title" maxlength="180" required /></label>
+              <label>Short description<textarea name="excerpt" rows="3" maxlength="500"></textarea></label>
+              <label data-body-field>Story text<textarea name="body" rows="10" placeholder="Write the full field note here…"></textarea></label>
+              <label data-video-field>Video link <span class="admin-help">YouTube, Vimeo, or a direct MP4/WebM/Ogg file URL</span><input name="media_url" type="url" placeholder="https://…" /></label>
+              <label>Photos <span class="admin-help" data-image-help>Optional; select multiple story photos, up to 10 MB each</span><input name="images" type="file" accept=".jpg,.jpeg,.png,.webp,.gif,.avif" multiple /></label>
+              <label>Publishing status<select name="status"><option value="draft">Save as draft</option><option value="published">Publish now</option></select></label>
+              <div class="admin-form-actions"><button class="admin-primary-button" type="submit" data-save-post>SAVE POST</button><button class="admin-secondary-button" type="button" data-cancel-edit hidden>CANCEL EDIT</button></div>
+            </form>
+          </section>
+          <section class="admin-post-list">
+            <div class="admin-list-heading"><h2>All posts</h2><button type="button" class="admin-secondary-button" data-refresh-posts>REFRESH</button></div>
+            <div data-admin-posts></div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>

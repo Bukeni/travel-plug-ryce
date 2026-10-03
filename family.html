@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#151713" />
+    <meta name="description" content="Explore family-friendly national parks, coast escapes and tour hotspots across Kenya with Travel Plug Ryce." />
+    <title>Family Trips in Kenya — Travel Plug Ryce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site-images.js"></script>
+  </head>
+  <body class="family-page">
+    <header class="site-header" id="family-top">
+      <a class="wordmark" href="index.html#top" aria-label="Travel Plug Ryce home" title="Back to the main site">
+        <img class="wordmark-logo" src="images/tp.PNG" alt="Travel Plug Ryce" />
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html#explore">EXPLORE</a>
+        <a href="index.html#journeys">JOURNEYS</a>
+        <a href="index.html#destinations">DESTINATIONS</a>
+        <a href="index.html#experiences">EXPERIENCES</a>
+        <a href="family.html" aria-current="page">FAMILY TRIPS</a>
+        <a href="index.html#stories">STORIES</a>
+        <a href="blog.html">BLOG</a>
+        <a href="index.html#about">ABOUT</a>
+      </nav>
+      <a class="header-location" href="#family-map"><span class="live-dot"></span> EXPLORE KENYA</a>
+    </header>
+
+    <main>
+      <section class="family-hero">
+        <div class="family-hero-image"></div>
+        <div class="family-hero-video" id="family-hero-player" aria-hidden="true"></div>
+        <div class="family-hero-video-poster" aria-hidden="true"></div>
+        <div class="family-hero-shade"></div>
+        <span class="family-hero-coordinate mono">A FAMILY FIELD GUIDE / KENYA</span>
+        <div class="family-hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> BIG ADVENTURE, ROOM FOR EVERYONE</p>
+          <h1>KENYA, TOGETHER.<br /><em>One good stop at a time.</em></h1>
+          <p>Wild mornings, easy afternoons, and places where the whole family can find their own kind of wonder.</p>
+          <a class="text-link hero-link" href="#family-map">FIND YOUR FAMILY STOP <span>↓</span></a>
+        </div>
+        <div class="hero-bottom"><span class="mono">PARKS · COAST · OPEN ROAD</span><span class="mono">TAP A MAP PIN TO WANDER ↓</span></div>
+      </section>
+
+      <section class="family-intro section-pad">
+        <p class="eyebrow dark-eyebrow">LESS PLANNING. MORE “LOOK AT THAT!”</p>
+        <div class="family-intro-row">
+          <h2>Find the right<br />kind of <em>wild.</em></h2>
+          <p>From first safari sightings to a slow coast-side reset, explore Kenya’s family-trip hotspots on the map. Tap any marker for activity ideas and family-friendly facilities to check as you plan. Conditions and services can change, so confirm details directly with each park or host.</p>
+        </div>
+        <div class="family-tags mono"><span>01 / PARKS & RESERVES</span><span>02 / EASY OUTDOOR DAYS</span><span>03 / FAMILY STAYS</span><span>04 / COASTAL TIME</span></div>
+      </section>
+
+      <section class="family-map-section section-pad" id="family-map">
+        <div class="section-heading light-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT FAMILY FIELD TRIP</p><h2>Kenya, <em>made for sharing.</em></h2></div>
+          <p class="heading-note">Tap a pin to see what you can do,<br />and what to check before you go.</p>
+        </div>
+        <div class="family-map-layout">
+          <div class="family-map-canvas" role="group" aria-label="Interactive map of family-friendly parks and tour areas in Kenya">
+            <div class="family-map-grid"></div>
+            <svg class="family-kenya-map" viewBox="0 0 520 580" aria-hidden="true">
+              <defs><pattern id="family-maplines" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M0 18L18 0" stroke="#77755f" stroke-opacity=".09" stroke-width="1"/></pattern></defs>
+              <path d="M148 40 L226 58 L287 45 L334 84 L372 78 L403 125 L450 143 L437 188 L465 224 L441 265 L453 305 L427 338 L436 379 L402 401 L388 448 L349 462 L327 513 L277 500 L235 527 L201 490 L160 479 L149 439 L111 423 L109 381 L75 351 L93 309 L70 276 L97 242 L82 203 L111 178 L99 140 L132 115 L119 76 Z" fill="url(#family-maplines)"/>
+              <path class="family-country-outline" d="M148 40 L226 58 L287 45 L334 84 L372 78 L403 125 L450 143 L437 188 L465 224 L441 265 L453 305 L427 338 L436 379 L402 401 L388 448 L349 462 L327 513 L277 500 L235 527 L201 490 L160 479 L149 439 L111 423 L109 381 L75 351 L93 309 L70 276 L97 242 L82 203 L111 178 L99 140 L132 115 L119 76 Z"/>
+              <path class="family-route-line" d="M249 167 C273 209 245 245 285 283 S304 365 347 410 S363 452 365 477"/>
+              <path class="family-route-line family-route-faint" d="M249 167 C201 198 169 230 139 276 S169 342 229 366 S284 421 365 477"/>
+              <text x="228" y="110" class="family-region-label">KENYA</text>
+              <text x="105" y="287" class="family-small-label">RIFT VALLEY</text>
+              <text x="230" y="390" class="family-small-label">TSAVO</text>
+              <text x="385" y="353" class="family-small-label">INDIAN OCEAN</text>
+            </svg>
+            <span class="family-map-compass mono">N<br /><b>↑</b></span>
+            <span class="family-map-scale mono">0 ───── 100 KM</span>
+            <span class="family-map-caption mono">FAMILY FIELD GUIDE / KENYA</span>
+            <button class="family-pin" style="--pin-x:48%;--pin-y:29%" data-stop="nakuru" aria-label="Lake Nakuru National Park"><span>01</span></button>
+            <button class="family-pin" style="--pin-x:38%;--pin-y:47%" data-stop="mara" aria-label="Maasai Mara National Reserve"><span>02</span></button>
+            <button class="family-pin" style="--pin-x:53%;--pin-y:43%" data-stop="naivasha" aria-label="Lake Naivasha and Hell's Gate"><span>03</span></button>
+            <button class="family-pin selected" style="--pin-x:56%;--pin-y:51%" data-stop="nairobi" aria-label="Nairobi National Park"><span>04</span></button>
+            <button class="family-pin" style="--pin-x:60%;--pin-y:68%" data-stop="amboseli" aria-label="Amboseli National Park"><span>05</span></button>
+            <button class="family-pin" style="--pin-x:72%;--pin-y:62%" data-stop="tsavo-west" aria-label="Tsavo West National Park"><span>06</span></button>
+            <button class="family-pin" style="--pin-x:80%;--pin-y:56%" data-stop="tsavo-east" aria-label="Tsavo East National Park"><span>07</span></button>
+            <button class="family-pin" style="--pin-x:86%;--pin-y:77%" data-stop="diani" aria-label="Diani and the South Coast"><span>08</span></button>
+            <div class="family-map-popover" id="family-map-popover" role="dialog" aria-labelledby="family-popover-title" hidden>
+              <button class="family-popover-close" type="button" aria-label="Close location details">×</button>
+              <p class="family-popover-kicker mono"></p>
+              <h3 id="family-popover-title"></h3>
+              <p class="family-popover-summary"></p>
+              <div class="family-popover-group"><span class="mono">TRY THESE ACTIVITIES</span><ul class="family-activities"></ul></div>
+              <div class="family-popover-group amenities-group"><span class="mono">FAMILY-FRIENDLY BASICS</span><ul class="family-amenities"></ul></div>
+              <p class="family-popover-tip"></p>
+              <a class="family-popover-link" href="#book-ryce">ASK RYCE TO GUIDE YOU <span>↗</span></a>
+            </div>
+          </div>
+          <aside class="family-map-aside">
+            <div class="family-aside-top mono"><span>CHOOSE A STOP</span><span>8 LOCATIONS</span></div>
+            <p class="eyebrow dark-eyebrow">A LITTLE MENU FOR YOUR MAP</p>
+            <h3>Good days<br />start <em>somewhere.</em></h3>
+            <p>Pick a marker for a quick peek at the kind of day you could have there. From gentle nature walks to an early safari start, build a trip that fits your family’s pace.</p>
+            <div class="family-key mono"><span><i>01–02</i> SAFARI & WILDLIFE</span><span><i>03</i> LAKE & OUTDOORS</span><span><i>04–07</i> NATIONAL PARKS</span><span><i>08</i> COAST & BEACH</span></div>
+            <div class="family-check"><span>BEFORE YOU GO</span><p>Park entry, road access, age limits and facilities can change. Confirm current details with the park, conservancy or accommodation provider before travelling.</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="guide-booking section-pad" id="book-ryce">
+        <div class="guide-booking-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> WANT A LOCAL GUIDE?</p>
+          <h2>Let’s take you<br /><em>out there.</em></h2>
+          <p>Want me to guide you to these beautiful spots? Get in touch and let’s talk through your trip. Send your dates, group size and the places you have in mind, and we can plan the details together.</p>
+        </div>
+        <div class="guide-booking-actions">
+          <a class="guide-contact guide-whatsapp" href="https://wa.me/254711492499?text=Hi%20Ryce%2C%20I%27d%20like%20to%20book%20you%20as%20a%20tour%20guide%20in%20Kenya.%20My%20preferred%20dates%20are%20" target="_blank" rel="noreferrer">
+            <span class="guide-contact-icon" aria-hidden="true">WA</span>
+            <span><b>MESSAGE ON WHATSAPP</b><small>+254 711 492 499</small></span>
+            <span class="guide-contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="guide-contact guide-email" href="mailto:arteefjid@gmail.com?subject=Kenya%20tour%20guide%20booking">
+            <span class="guide-contact-icon" aria-hidden="true">@</span>
+            <span><b>EMAIL RYCE</b><small>arteefjid@gmail.com</small></span>
+            <span class="guide-contact-arrow" aria-hidden="true">↗</span>
+          </a>
+          <span class="guide-booking-note mono">LET’S MAKE A GOOD ROAD STORY.</span>
+        </div>
+      </section>
+
+      <section class="family-planning section-pad" id="family-planning">
+        <div class="section-heading dark-heading">
+          <div><p class="eyebrow dark-eyebrow">A FEW THINGS I’VE LEARNED ON THE ROAD</p><h2>Make room for<br /><em>the good bits.</em></h2></div>
+          <p class="heading-note">A little planning leaves more room<br />for the unexpected stop.</p>
+        </div>
+        <div class="family-planning-grid">
+          <article><span class="mono">01 / PACE</span><h3>One big thing a day.</h3><p>Long drives and early starts add up. Build in a slow meal or a pool-side afternoon, especially with little travellers in tow.</p></article>
+          <article><span class="mono">02 / THE DETAILS</span><h3>Call before you roll.</h3><p>Check opening times, entry fees, child policies, road conditions and what’s actually available at your stay. A quick call can save a long detour.</p></article>
+          <article><span class="mono">03 / THE DRIVE</span><h3>Pack for the in-between.</h3><p>Water, snacks, sun cover and a few stops make the journey feel like part of the adventure, not just the bit between destinations.</p></article>
+          <article><span class="mono">04 / RESPECT</span><h3>Go with local knowledge.</h3><p>Use registered local guides where needed, follow wildlife guidance and ask permission before photographing people or entering community land.</p></article>
+        </div>
+      </section>
+
+      <section class="family-cta">
+        <div class="family-cta-image"></div><div class="family-cta-shade"></div>
+        <div class="family-cta-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> MAKE YOUR OWN FIELD NOTES</p>
+          <h2>Here’s to the<br /><em>“remember when?”</em></h2>
+          <p>Start with a place. Let the day take it from there.</p>
+          <a class="button-link" href="index.html#journeys">EXPLORE ALL JOURNEYS <span>→</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="index.html#top" aria-label="Travel Plug Ryce home" title="Back to the main site"><img class="wordmark-logo" src="images/tp.PNG" alt="Travel Plug Ryce" /></a>
+      <span class="footer-note mono">MADE BETWEEN DETOURS IN KENYA <span>✳</span> 2026</span>
+      <div class="social-links"><a href="https://www.instagram.com/travel_plugryce/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a><a href="https://www.youtube.com/@TravelPlugRyce" target="_blank" rel="noreferrer">YOUTUBE ↗</a><a href="https://www.tiktok.com/@travelplugryce" target="_blank" rel="noreferrer">TIKTOK ↗</a></div>
+      <a href="#family-top" class="back-top mono">BACK TO TOP ↑</a>
+    </footer>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="family-map.js"></script>
+  </body>
+</html>
